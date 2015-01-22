@@ -5,3 +5,6 @@ exports.stringLength = function(str){
 };
 
 
+exports.stringValue = function(str){
+    return str + "aabbcc";
+};
