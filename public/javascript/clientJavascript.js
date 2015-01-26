@@ -29,3 +29,8 @@ var returnKittens = function(){
     return "kittens";
 };
 
+var addNumbers = function(arg1, arg2){
+    arg3 = arg1 + arg2;
+    return arg3;
+};
+
