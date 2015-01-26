@@ -51,6 +51,10 @@ app.post('/petForm', function(req, res){
     console.log(req.body.newPet);
 });
 
+app.get('/GPAcalculator', function(req, res){
+    res.sendFile("GPAcalculator.html",options);
+});
+
 app.get('/', function(req, res){
     res.sendFile('index.html', options);
 });
@@ -60,6 +64,8 @@ app.get('*', function(req, res){
     res.send("404 - sorry, this page doesn't exist. Bummer!");
 //    res.sendFile('404.html', options);
 });
+
+
 
 // Starts the nodejs server on port 9000
 var server = app.listen(9000, function(){
