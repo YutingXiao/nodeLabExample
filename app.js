@@ -55,6 +55,13 @@ app.get('/GPAcalculator', function(req, res){
     res.sendFile("GPAcalculator.html",options);
 });
 
+app.post('/GPAcalculator', function(req, res){
+    res.send("Your GPA is: ");
+
+
+    console.log(req.body.newClass3);
+});
+
 app.get('/', function(req, res){
     res.sendFile('index.html', options);
 });
