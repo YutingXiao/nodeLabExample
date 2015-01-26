@@ -8,3 +8,34 @@ exports.stringLength = function(str){
 exports.stringValue = function(str){
     return str + "aabbcc";
 };
+
+exports.gpaFinder = function(number,str,number2,str2,number3,str3){
+  new1 = numbergrade(str);
+  new2 = numbergrade(str2);
+  new3 = numbergrade(str3);
+
+  gpa = ((new1*number + new2*number2 + new3*number3)/(number+number2+number3));
+
+  return gpa;
+};
+
+exports.numbergrade = function(input){
+    switch (str){
+        case "a"||"A":
+            input = 4.0;
+            break;
+        case "b"||"B":
+            input = 3.0;
+            break;
+        case "c"||"C":
+            input = 2.0;
+            break;
+        case "d"||"D":
+            input = 1.0;
+            break;
+        case "f"||"F":
+            input = 0.0;
+            break;
+    }
+    return input;
+}
