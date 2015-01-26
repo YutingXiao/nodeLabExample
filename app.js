@@ -56,10 +56,10 @@ app.get('/GPAcalculator', function(req, res){
 });
 
 app.post('/GPAcalculator', function(req, res){
-    res.send("Your GPA is: ");
+    res.send("Your GPA is: " + tools.gpaFinder(req.body.newClass,req.body.newGPA,req.body.newClass2,req.body.newGPA2,req.body.newClass3,req.body.newGPA3));
 
 
-    console.log(req.body.newClass3);
+    //console.log(req.body.newClass3);
 });
 
 app.get('/', function(req, res){

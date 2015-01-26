@@ -19,8 +19,8 @@ exports.gpaFinder = function(number,str,number2,str2,number3,str3){
   return gpa;
 };
 
-exports.numbergrade = function(input){
-    switch (str){
+var numbergrade = function(input){
+    switch (input){
         case "a"||"A":
             input = 4.0;
             break;
